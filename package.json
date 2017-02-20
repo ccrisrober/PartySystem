@@ -1,0 +1,23 @@
+{
+  "name": "party_system",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/maldicion069/PartySystem.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/maldicion069/PartySystem/issues"
+  },
+  "homepage": "https://github.com/maldicion069/PartySystem#readme",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "merge2": "^1.0.3"
+  }
+}
