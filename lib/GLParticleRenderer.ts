@@ -1,4 +1,6 @@
 /// <reference path="IParticleRenderer.ts" />
+/// <reference path="./mb/VertexArray.ts" />
+/// <reference path="./mb/VertexBuffer.ts" />
 
 class GLParticleRenderer implements IParticleRenderer
 {
@@ -11,8 +13,8 @@ class GLParticleRenderer implements IParticleRenderer
 	{
 		var gl: WebGLRenderingContext;
 
-		gl.deleteBuffer( this._bufPos );
-		gl.deleteBuffer( this._bufPos );
+		this._bufPos.destroy( );
+		this._bufCol.destroy( );
 	}
 	public update( ): void
 	{
@@ -31,17 +33,17 @@ class GLParticleRenderer implements IParticleRenderer
 	{
 		var gl: any;
 
-		gl.bindVertexArray();
+		this._vao.bind( );
 
 		var count = 0; //system->numAliveParticles( );
 		if ( count > 0 )
 		{
 			gl.drawArrays( gl.POINTS, 0, count );
 		}
-		gl.bindVertexArray( null );
+		this._vao.unbind( );
 	}
 
-	protected _vao: any;
-	protected _bufPos: WebGLBuffer;
-	protected _bufCol: WebGLBuffer;
+	protected _vao: MB.VertexArray;
+	protected _bufPos: MB.VertexBuffer;
+	protected _bufCol: MB.VertexBuffer;
 }

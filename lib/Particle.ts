@@ -8,7 +8,6 @@ class ParticleData
 	protected _endCol: Float32Array;
 	protected _vel: Float32Array;
 	protected _acc: Float32Array;
-	protected _time: Float32Array;
 	protected _alive: [boolean];
 
 	public generate( maxSize: number): void
@@ -19,7 +18,6 @@ class ParticleData
 		this._endCol = vec4.create();
 		this._vel = vec4.create();
 		this._acc = vec4.create();
-		this._time = vec4.create();
 		this._alive = [true];
 	}
 }

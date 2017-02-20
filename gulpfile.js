@@ -3,7 +3,8 @@ var ts = require('gulp-typescript');
 var merge = require('merge2');
 
 var tsProject = ts.createProject({
-    declaration: true
+    declaration: true,
+    target: "es5"
 });
 
 gulp.task('scripts', function() {

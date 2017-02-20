@@ -1,8 +1,8 @@
 /// <reference path="../ParticleGenerator.ts" />
 
-//namespace generators
-//{
-	class BoxPosGen extends ParticleGenerator
+namespace generators
+{
+	export class BoxPosGen extends ParticleGenerator
 	{
 		constructor( )
 		{
@@ -19,7 +19,7 @@
 		protected _maxStartPosOffset: any;
 	}
 
-	class RoundPosGen extends ParticleGenerator
+	export class RoundPosGen extends ParticleGenerator
 	{
 		constructor( center = [0.0, 0.0, 0.0, 0.0], radX = 0.0, radY = 0.0 )
 		{
@@ -38,7 +38,7 @@
 		protected _radY: number;
 	}
 
-	class BasicColorGen extends ParticleGenerator
+	export class BasicColorGen extends ParticleGenerator
 	{
 		constructor( )
 		{
@@ -50,7 +50,7 @@
 		}
 	}
 
-	class BasicVelGen extends ParticleGenerator
+	export class BasicVelGen extends ParticleGenerator
 	{
 		constructor( )
 		{
@@ -61,4 +61,4 @@
 
 		}
 	}
-//}
+}
