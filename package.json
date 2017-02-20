@@ -10,8 +10,8 @@
     "type": "git",
     "url": "git+https://github.com/maldicion069/PartySystem.git"
   },
-  "author": "",
-  "license": "ISC",
+  "author": "maldicion069",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/maldicion069/PartySystem/issues"
   },
