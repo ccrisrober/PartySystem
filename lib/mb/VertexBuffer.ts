@@ -135,7 +135,7 @@ namespace MB {
                 MB.ctes.DataType.Float,
                 false,
                 length * Float32Array.BYTES_PER_ELEMENT,
-                0);
+                stride);
             gl.vertexAttribDivisor(position, divisor);
         }
         /**
